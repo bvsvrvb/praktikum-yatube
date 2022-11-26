@@ -2,6 +2,7 @@ from django.test import TestCase, Client
 from mixer.backend.django import mixer
 from http import HTTPStatus
 from django.urls import reverse
+from django.core.cache import cache
 
 from posts.models import Post, Group, User, Comment
 
@@ -44,6 +45,7 @@ class PostsURLTests(TestCase):
         )
         for url in urls_templates:
             with self.subTest(template=url[1]):
+                cache.clear()
                 response = self.auth.get(reverse(url[0], args=url[2]))
                 self.assertTemplateUsed(response, url[1])
 

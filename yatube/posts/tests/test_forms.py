@@ -92,7 +92,7 @@ class PostFormTests(TestCase):
         )
         self.assertEqual(
             post1.image.file.name,
-            TEMP_MEDIA_ROOT + '\\posts\\' + form_data['image'].name
+            TEMP_MEDIA_ROOT + '/posts/' + form_data['image'].name
         )
 
     def test_edit_post(self):
