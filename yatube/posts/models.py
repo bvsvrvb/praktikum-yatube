@@ -35,6 +35,7 @@ class Follow(models.Model):
 
 
 class Post(CreatedModel):
+    LIMITER = 15
     text = models.TextField(
         'Текст поста',
         help_text='Введите текст поста'
@@ -66,7 +67,7 @@ class Post(CreatedModel):
         verbose_name_plural = 'Посты'
 
     def __str__(self) -> str:
-        return self.text[:15]
+        return self.text[:self.LIMITER]
 
 
 class Comment(CreatedModel):

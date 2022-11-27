@@ -99,4 +99,4 @@ class PostsURLTests(TestCase):
         """Комментирование доступно авторизованному пользователю"""
         response = self.auth.get(reverse(
             self.URL_POST_COMMENT[0], args=self.URL_POST_COMMENT[2]))
-        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.status_code, HTTPStatus.FOUND)
