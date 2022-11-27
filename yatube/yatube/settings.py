@@ -4,7 +4,7 @@ from django.core.management.utils import get_random_secret_key
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = get_random_secret_key()  # 'ohkr%h#_v+clndq9k#7-lfygam7gt(f#iy3wtj76*@j1n@s73o'
+SECRET_KEY = get_random_secret_key()
 
 DEBUG = True
 
