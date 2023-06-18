@@ -28,8 +28,9 @@
 > Вы же программисты, сами понимаете, как лучше сделать.
 
 ## Технологии
-[![Python](https://img.shields.io/badge/-Python-464646?style=flat-square&logo=Python)](https://www.python.org/)
-[![Django](https://img.shields.io/badge/-Django-464646?style=flat-square&logo=Django)](https://www.djangoproject.com/)
+[![Python](https://img.shields.io/badge/-Python-464646?style=flat-square&logo=python)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/-Django-464646?style=flat-square&logo=django)](https://www.djangoproject.com/)
+[![SQLite](https://img.shields.io/badge/-SQLite-464646?style=flat-square&logo=sqlite)](https://www.sqlite.org/)
 
 ## Запуск проекта в Dev-режиме
 Клонировать репозиторий и перейти в директорию проекта:
